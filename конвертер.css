@@ -1,0 +1,43 @@
+body {
+    background: url("https://img.freepik.com/free-photo/dollar-banknotes-frame_1150-6686.jpg?size=626&ext=jpg&ga=GA1.1.2113030492.1720396800&semt=sph") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+h1 {
+    color: #c7a51c;
+    text-align: center;
+    margin-top: 400px;
+
+}
+
+form {
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+select {
+    padding: 0.5em;
+
+}
+
+input {
+    padding: 0.5em;
+    width: 100%;
+
+}
+
+.row {
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+
+}
+
+button {
+    border-radius: 0.5em;
+    padding: 0.5em;
+    font-weight: bold;
+    background-color: #c7a51c;
+}

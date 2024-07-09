@@ -1,32 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="vievport content=width=device-width, initial-scale=1">
-        <title>Конвертация валюты</title>
+<html lang="ru">
 
-    </head>
+<head>
+  <link rel="stylesheet" href="конвертер.css">
+  <meta charset="UTF-8">
+  <meta name="vievport content=width=device-width, initial-scale=1">
+  <title>Конвертация валюты</title>
+
+</head>
+
 <body>
-<h1>Конвертация валюты</h1>
-<form>
-    <h3>Выберите валюту из которой хотите:</h3>
+  <h1>Конвертация валюты</h1>
+  <form>
+    <h3>Выберите исходную валюту:</h3>
 
-<select name="curr" id="curr-select">
-  <option value="">--Выберите валюту--</option>
-  
-</select>
-    <br><label for="amount">Сумма:</label><br>
-    <input type="number" min="0.0" step="1" id="amount" name="amount">
-    <br><h3>Выберите валюту в которую хотите :</h3>
-    <select name="curr" id="curr-select2">
-      <option value="">--Выберите валюту--</option>
-      
-    </select>
-    <br><label for="amountnew">Сумма после конвертации:</label><br>
-    <input type="text" readonly id="amountnew" name="amountnew">
-    <br><button id="buttoncon" type="button">Конвертировать</button>
+    <div class="row"><select name="curr" id="curr-select">
+        <option value="">--Выберите валюту--</option>
+
+      </select></div>
+    <div class="row"><label for="amount">Сумма:</label></div>
+    <div class="row"><input type="number" min="0.0" step="1" id="amount" name="amount"></div>
+    <div class="row">
+      <h3>Выберите конечную валюту:</h3>
+    </div>
+    <div class="row"><select name="curr" id="curr-select2">
+        <option value="">--Выберите валюту--</option>
+
+      </select></div>
+    <div class="row"><label for="amountnew">Сумма после конвертации:</label></div>
+    <div class="row"><input type="text" readonly id="amountnew" name="amountnew"></div>
+    <div class="row"><button id="buttoncon" type="button">Конвертировать</button></div>
 
   </form>
   <script src="конвертер.js"></script>
 </body>
+
 </html>
