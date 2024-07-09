@@ -22,7 +22,7 @@ elem.onclick = function () {
     let rate2 = exchange.filter(obj => {
         return obj.Cur_Abbreviation === curr2
     });
-    let result = (rate1[0].Cur_OfficialRate * amount / rate2[0].Cur_OfficialRate).toFixed(2);
+    let result = (rate1[0].Cur_OfficialRate * amount / rate1[0].Cur_Scale / (rate2[0].Cur_OfficialRate / rate2[0].Cur_Scale)).toFixed(2);
     document.getElementById('amountnew').value = result;
     console.log(curr, curr2, amount, rate1, rate2);
 }
@@ -32,6 +32,7 @@ let url = 'https://api.nbrb.by/exrates/rates?parammode=2&periodicity=0';
     if (response.ok) { // если HTTP-статус в диапазоне 200-299
         // получаем тело ответа (см. про этот метод ниже)
         exchange = await response.json();
+        exchange.push({ Cur_Abbreviation: 'BYN', Cur_Scale: 1, Cur_OfficialRate: 1, Cur_Name: 'Белорусский рубль' });
         let select = document.getElementById('curr-select');
         let select2 = document.getElementById('curr-select2');
         for (let i = 0; i < exchange.length; i++) {
