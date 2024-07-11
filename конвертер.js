@@ -49,5 +49,6 @@ let url = 'https://api.nbrb.by/exrates/rates?parammode=2&periodicity=0';
         alert("Ошибка HTTP: " + response.status);
     }
 })()
-document.getElementById('buttonlist').addEventListener('click', function() {
-    window.location.href = 'валюты.html'})
+document.getElementById('buttonlist').onclick = function () {
+    window.location.href = 'валюты.html'
+}

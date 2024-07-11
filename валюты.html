@@ -1,34 +1,29 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
+  <link rel="stylesheet" href="валюты.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Список валют</title>
-  <style>
-    table {
-      border-collapse: collapse;
-      margin: 20px auto;
-    }
-
-    th, td {
-      border: 1px solid black;
-      padding: 10px;
-    }
-  </style>
 </head>
+
 <body>
-    <h1>Список валют</h1>
-    <table id="currency-table">
-      <thead>
-        <tr>
-          <th>Валюта</th>
-          <th>Курс</th>
-        </tr>
-      </thead>
-      <tbody>
-        
-      </tbody>
-    </table>
-    <script src="валюты.js"></script>
-    </body>
+  <h1>Список валют</h1>
+  <button id="buttonback" type="button">Назад</button>
+  <table id="currency-table">
+    <thead>
+      <tr>
+        <th>Валюта</th>
+        <th>Курс</th>
+        <th>Избранное</th>
+      </tr>
+    </thead>
+    <tbody id="data">
+
+    </tbody>
+  </table>
+  <script src="валюты.js"></script>
+</body>
+
 </html>
